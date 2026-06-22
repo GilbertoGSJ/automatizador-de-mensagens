@@ -89,5 +89,5 @@ pip install -r requirements.txt
 # Irá rodar o projeto.
 python -m main
 ```
-## License
-O projeto é licenciado por [MIT License](LICENSE).
+## Licença
+O projeto é licenciado com [MIT License](LICENSE).
