@@ -14,7 +14,7 @@ def enviar_mensagem(telefone: str, nome: str) -> bool:
     )
     texto = f"Olá, {nome} tudo bem com você?"
 
-    mensagem = {"telefone": telefone,"texto": texto}
+    mensagem = {"phone": telefone,"message": texto}
 
     try:
         response = requests.post(
