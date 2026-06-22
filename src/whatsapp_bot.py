@@ -9,8 +9,7 @@ from config import (
 def enviar_mensagem(telefone: str, nome: str) -> bool:
     #
     url = (
-        f"https://api.z-api.io/instances/"
-        f"{ZAPI_ID}/token/{ZAPI_TOKEN}/send-text"
+        f"https://api.z-api.io/instances/{ZAPI_ID}/token/{ZAPI_TOKEN}/send-text"
     )
     texto = f"Olá, {nome} tudo bem com você?"
 
