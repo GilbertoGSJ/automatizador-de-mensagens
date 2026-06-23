@@ -53,7 +53,7 @@ create table Contatos (
   telefone text not null unique
 );
 
---Insere os contatos ao table do banco de dados.
+--Insere os contatos à table do banco de dados. Os contatos abaixo são artificiais.
 
 insert into contatos (nome, telefone) values
     ('Carlos Alvarez', '5561999998831'),
@@ -89,5 +89,5 @@ pip install -r requirements.txt
 # Irá rodar o projeto.
 python -m main
 ```
-## License
-O projeto é licenciado por [MIT License]().
+## Licença
+O projeto é licenciado com [MIT License](LICENSE).
