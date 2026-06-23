@@ -43,20 +43,24 @@ Automatizador_de_mensagens/
 Setup da tabela escrita no SQL editor do Supabase.
 ```sql
 --Cria a tabela de contatos contendo o ID, nome, data de criação do contato e telefone.
-
-create table Contatos (
+create table contatos (
   id bigint generated always as identity primary key,
   criado_em timestamp with time zone not null default now(),
   nome text not null,
   telefone text not null unique
 );
-
---Insere os contatos à table do banco de dados. Os contatos abaixo são artificiais.
-
+--Insere os contatos ao table do banco de dados.
 insert into contatos (nome, telefone) values
-    ('Carlos Alvarez', '5561999998831'),
+    ('Carlos Alvarez',  '5561999998831'),
     ('Chico Santos', '5561999998822'),
     ('Leila Torres', '5561999998813');
+
+ALTER TABLE contatos ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "allow_select_service_role"
+ON contatos
+FOR SELECT
+USING (true);
+GRANT SELECT ON public.contatos TO service_role;
 ```
 ## Variáveis de ambiente (.env)
 Crie um arquivo `.env` na pasta raiz do projeto contendo as seguintes váriaveis.
