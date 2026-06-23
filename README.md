@@ -1,7 +1,5 @@
 # Desafio 2b2flow - Automação de contatos
-<img src= "images/Python.png" height = 100>
-<img src= "images/supabase.png" height = 100>
-<img src= "images/zapi.png" height = 80>
+<img src= "images/Python.png" height = 100><img src= "images/supabase.png" height = 100><img src= "images/zapi.png" height = 80>
 
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
@@ -62,12 +60,12 @@ insert into contatos (nome, telefone) values
 ```
 ## Variáveis de ambiente (.env)
 Crie um arquivo `.env` na pasta raiz do projeto contendo as seguintes váriaveis.
-| Variável      | Descrição             |
-| ------------- | -------------         |
-| SUPABASE_URL  | Seu url do Supabase   |
-| SUPABASE_KEY  | Sua chave do Supabase |
-| ZAPI_ID       | Seu ID do Z-API       |
-| ZAPI_TOKEN    | Seu token do Z-API    |
+| Variável        | Descrição             |
+| ----------------|-----------------------|
+| `SUPABASE_URL`  | Seu url do Supabase   |
+| `SUPABASE_KEY`  | Sua chave do Supabase |
+| `ZAPI_ID`       | Seu ID do Z-API       |
+| `ZAPI_TOKEN`    | Seu token do Z-API    |
 
 ## Instruções de Instalação
 Após fazer o download do repositório, é necessário criar e rodar um ambiente virtual.
