@@ -12,10 +12,7 @@ def enviar_mensagem(telefone: str, nome: str) -> bool:
         f"https://api.z-api.io/instances/{ZAPI_ID}/token/{ZAPI_TOKEN}/send-text"
     )
     texto = f"Olá, {nome} tudo bem com você?"
-
-    mensagem = {"phone": telefone,
-                "message": texto}
-
+    
     payload = {"phone": telefone,
                 "message": texto
     }
