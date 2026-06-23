@@ -1,7 +1,7 @@
 import logging
 import requests
 
-from config import (
+from src.config import (
     ZAPI_ID,
     ZAPI_TOKEN
 )
@@ -16,15 +16,14 @@ def enviar_mensagem(telefone: str, nome: str) -> bool:
     mensagem = {"phone": telefone,
                 "message": texto}
 
+    payload = {"phone": telefone,
+                "message": texto
+    }
     try:
-        response = requests.post(
-            url,
-            json=mensagem,
-            timeout= 10
-        )
+        response = requests.post(url,json=payload,timeout= 10)
         response.raise_for_status()
 
-        logging.info(f"Mensagem enviada para o  cantato, {nome}")
+        logging.info(f"Mensagem enviada para o contato, {nome}")
         return True
 
     except requests.exceptions.RequestException as error:
