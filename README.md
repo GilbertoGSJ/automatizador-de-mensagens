@@ -1,5 +1,5 @@
 # Desafio 2b2flow - Automação de contatos
-<img src= "images/python.png" height = 100>
+<img src= "images/Python.png" height = 100>
 <img src= "images/supabase.png" height = 100>
 <img src= "images/zapi.png" height = 80>
 
